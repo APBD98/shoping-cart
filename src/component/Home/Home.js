@@ -30,7 +30,7 @@ const Home = () => {
               })}
               
           </div>
-          <div className="amount d-flex flex-column justify-content-evenly">
+          <div className="amount d-flex flex-column justify-content-evenly mt-2">
               <div>
                 <h1 className='fs-5'>The Total Amount Of</h1>
                 <p>Temporary amount <span className='harga'>${totalAmount}</span> </p>

@@ -19,11 +19,15 @@ const CardItem = (props) => {
     <div className="card mb-3" style={{maxWidth:'720px'}}>
                 <div className="row g-0">
                         <div className="col">
-                            <img src={props.img} alt="" />
+                            <img src={props.img} alt="" style={{width:'150px', height:'200px', borderRadius:'10px'}}/>
                         </div>
                         <div className="col-md-auto">
                             <div className="card-body pt-4">
-                                <h5 className="card-title pt-3 ps-2 mb-5">{props.title}</h5>
+                                <div className='card-title pt-3 ps-2 mb-5'>
+                                <h5>{props.title}</h5>
+                                <p style={{fontSize:'14px', opacity:'0.5'}}>Ingrediants: {props.ingrediants}</p>
+
+                                </div>
                                 <div className='button'>
                                     <button className='btn ' onClick={() => {
                                         dispatch(remove(props.id))
